@@ -1,8 +1,6 @@
 # Report
-> [Name and PennKey for each member]
-
-Group/Collaborator:
-Yijie Lu (pennkey: luyijie), Yuzhou Lin (pennkey: yzlin)
+> Group/Collaborator:
+> Yijie Lu (pennkey: luyijie), Yuzhou Lin (pennkey: yzlin)
 
 ## Baseline Models (Yijie Lu, Yuzhou Lin)
 ### All Complex
