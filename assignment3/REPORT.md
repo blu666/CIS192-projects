@@ -32,17 +32,17 @@ The algorithm uses decision stump as its base and repeatedly train the model wit
 ### How long did this assignment take you?
 Approximately 7 hours for in total
 ### What were some things you liked and didn't like?
-liked: very clear instruction for steps to follow (README)
-didn't like: the training & test performances for Bayes/Logit are only slightly higher than 0.5
+liked: very clear instruction for steps to follow (README)  
+didn't like: the training & test performances for Bayes/Logit are only slightly higher than 0.5  
 ### Tell me a joke! (from Quora)
-Interviewer: What’s your biggest strength ?
-Me: I’m an expert in Machine Learning.
-Interviewer: What’s 9 + 10 ?
-Me: I’m 3.
-Interviewer: Not even close. It’s 19.
-Me: It’s 16.
-Interviewer: Wrong. It's still 19.
-Me: It’s 18.
-Interviewer: No, it’s 19… Arghhh
-Me: It’s 19.
-Interviewer: You are hired.
+Interviewer: What’s your biggest strength?  
+Me: I’m an expert in Machine Learning.  
+Interviewer: What’s 9 + 10 ?  
+Me: I’m 3.  
+Interviewer: Not even close. It’s 19.  
+Me: It’s 16.  
+Interviewer: Wrong. It's still 19.  
+Me: It’s 18.  
+Interviewer: No, it’s 19… Arghhh  
+Me: It’s 19.  
+Interviewer: You are hired.  
