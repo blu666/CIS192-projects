@@ -1,0 +1,50 @@
+<!doctype html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Quikker Accounts</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+      </head>
+    <body>
+        <nav class="navbar navbar-inverse header">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand header-a">Welcome to Quikker</a>
+                        <a> A twitter for Quakers</a>
+                    </div>
+
+                </div>
+            </nav>
+
+        <div class="row">
+            <div class="col col-md-6">
+                  <h1>Log In</h1>
+                  <form method="POST" action="/login/">
+                      {% csrf_token %}
+                      <input name="username"  placeholder="username" />
+                      <input name="password"  placeholder="password" type="password" />
+                      <button type="submit">Log In</button>
+                  </form>
+            </div>
+
+
+            <div class = "col col-md-6">
+                <h1>Sign Up</h1>
+                <form method="POST" action="/signup/">
+                    {% csrf_token %}
+                    <input name="username"  placeholder="username" />
+                    <input name="email"  placeholder="email" />
+                    <input name="password"  placeholder="password" type="password" />
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
+
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,34 @@
+ <!doctype html>
+    <html lang="en">
+        <head>
+            <!-- Required meta tags -->
+            <meta charset="utf-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <title>Quikker</title>
+            <meta name="description" content="">
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+            <!-- Bootstrap CSS -->
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+                integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+                crossorigin="anonymous">
+
+        </head>
+        <body>
+            <nav class="navbar navbar-inverse header">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand header-a" href="/">Quikker</a>
+                        <a>An idea space for Quakers</a>
+                    </div>
+                </div>
+            </nav>
+        {% if user.is_authenticated %}
+            <meta http-equiv="REFRESH" content="0;url=/">
+        {% else %}
+        <a href="/accounts" style="font-size: 13px;color:blue">
+                                            Click here to Log In Or Sign Up</a>
+
+        {% endif %}
+        </body>
+    </html>
