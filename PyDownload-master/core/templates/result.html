@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <meta charset="utf-8" />
+
+  <title>result</title>
+  <meta name="description" content="Twitter Clone" />
+  <meta name="author" content="PQY" />
+  {% load static %}
+
+  <link rel="stylesheet" type="text/css" href="{% static 'all.css' %}">
+</head>
+
+<body class="particle">
+
+<div class="jumbotron text-center mx-auto bg-transparent" style="width: 70%">
+  <h1 class="display-4">Result</h1>
+  <p class="lead">From search query: <em>{{query}}</em></p><a href="/search/"> <button class="btn btn-outline-danger mx-3" type="submit" >Back</button></a>
+  <hr class="my-4">
+</div>
+{% for video in data %}
+<div class="card mb-5 mx-auto" style="width: 70%; opacity: 90%">
+  <div class="row card-block">
+    <div class="col" style="text-align:center"> 
+      <img class="card-img" src={{video.thumbnail}} alt="Card image cap">
+    </div>
+    <div class="col mx-auto"> 
+      <h5 class="card-title mt-3">{{video.title}}</h5><a href={{video.url}}>View</a>
+      <form class = "form-group" method="POST" action="/result/">
+      {% csrf_token %}
+      <input class="invisible" name="download" value={{video.url}}>
+      <input class="invisible" name="query" value="{{query}}">
+      <button href="#" type="submit" class="btn btn-danger btn-bottom">Download</button>
+      </form>
+    </div>
+  </div>
+</div>
+{% endfor %}
+
+
+
+
+</body>
+</html>

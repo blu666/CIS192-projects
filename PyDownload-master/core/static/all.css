@@ -1,0 +1,31 @@
+#particles-js{
+    position: fixed;
+}
+
+.jumbotron{
+    text-align: center;
+    width: 100%;
+}
+.white{
+    background-image: url("m1.jpg");
+    background-size: 100%;
+    background-repeat: repeat;
+}
+
+.particle{
+    background-image: url("p1.jpg");
+    background-size: 100%;
+    background-repeat: repeat;
+}
+
+.card-img {
+    margin: 0 auto;
+    object-fit: cover;
+    text-align: center important!;
+}
+
+.btn-bottom{
+    position: absolute;
+    right:3vw;
+    bottom:1vw;
+}
